@@ -66,8 +66,7 @@ header {
   color: #1e90ff;
 }
 
-h1,
-h2 {
+h1, h2 {
   margin: 1rem 0;
 }
 
@@ -83,16 +82,20 @@ section {
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  width: calc(33.333% - 40px);
-  margin-bottom: 2rem;
-  box-sizing: border-box;
-  transition: transform 0.2s, box-shadow 0.3s;
+  width: calc(33.333% - 40px); 
+  margin-bottom: 2rem; 
+  box-sizing: border-box; 
+  transition: transform 0.2s, box-shadow 0.3s; 
   overflow: hidden;
   opacity: 0; /* Start with opacity 0 for fade-in effect */
 }
 
+.taskBox:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); 
+}
+
 .taskBox.animate {
-  opacity: 1; /* Ensure opacity is 1 when animated */
   animation: slideInBoxes 0.5s ease forwards;
 }
 
@@ -107,20 +110,15 @@ section {
   }
 }
 
-.taskBox:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-}
-
 .tr-102 {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1rem; 
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  font-size: 1.2rem;
+  font-size: 1.2rem; 
   font-weight: bold;
-  color: #1e90ff;
+  color: #1e90ff; 
   background-color: rgba(255, 255, 255, 0.8);
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -140,20 +138,20 @@ section {
 
 @media (max-width: 1200px) {
   .taskBox {
-    width: calc(50% - 40px);
+    width: calc(50% - 40px); 
   }
 }
 
 @media (max-width: 768px) {
   .taskBox {
-    width: calc(50% - 40px);
+    width: calc(50% - 40px); 
   }
 }
 
 @media (max-width: 480px) {
   .taskBox {
-    width: calc(100% - 40px);
-    margin-right: 0;
+    width: calc(100% - 40px); 
+    margin-right: 0; 
   }
 }
 
