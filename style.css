@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
   font-family: Arial, sans-serif;
   margin: 2rem;
@@ -73,30 +71,30 @@ section {
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  width: calc(33.333% - 40px); /* Adjusted width for three boxes in a row */
-  margin-bottom: 2rem; /* Adds space below each box */
-  box-sizing: border-box; /* Ensure padding and border are included in width calculation */
-  transition: transform 0.2s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  width: calc(33.333% - 40px); 
+  margin-bottom: 2rem; 
+  box-sizing: border-box; 
+  transition: transform 0.2s, box-shadow 0.3s; 
   overflow: hidden;
 }
 
 .taskBox:hover {
-  transform: scale(1.05); /* Scale up on hover */
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+  transform: scale(1.05); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); 
 }
 .tr-102 {
   position: absolute;
-  bottom: 1rem; /* Adjust vertical position */
+  bottom: 1rem; 
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  font-size: 1.2rem; /* Adjust font size */
+  font-size: 1.2rem; 
   font-weight: bold;
-  color: #1e90ff; /* Adjust text color */
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  color: #1e90ff; 
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  animation: fadeInText 0.5s ease-in-out; /* Animation for text */
+  animation: fadeInText 0.5s ease-in-out;
 }
 @keyframes fadeInText {
   from {
@@ -111,13 +109,13 @@ section {
 
 @media (max-width: 1200px) {
   .taskBox {
-    width: calc(50% - 40px); /* Two boxes in a row on medium screens */
+    width: calc(50% - 40px); 
   }
 }
 
 @media (max-width: 768px) {
   .taskBox {
-    width: calc(50% - 40px); /* Two boxes in a row on smaller screens */
+    width: calc(50% - 40px); 
   }
 }
 
