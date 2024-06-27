@@ -1,5 +1,3 @@
-/* style.css */
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -120,36 +118,25 @@ footer .contact-info p {
 }
 
 footer a {
-  color: #1e90ff;
+  color: #555; /* Match text color of email */
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
   border-radius: 4px;
-  background-color: #ff6347; /* Coral background color */
+  background-color: #f0f0f0; /* Match background color of email section */
   transition: background-color 0.3s ease;
 }
 
 footer a:hover {
-  background-color: #f44336; /* Darker coral color on hover */
+  background-color: #ddd; /* Darker on hover for effect */
 }
- <style>
-    .contact-info {
-      text-align: center; /* Center align the contact info */
-      margin-top: 20px; /* Space between content and footer */
-    }
 
-    .contact-info p {
-      font-size: 1.2em; /* Font size for contact information */
-      color: #555; /* Text color */
-      margin: 10px 0; /* Vertical spacing */
-    }
+.contact-icon {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
 
-    .contact-icon {
-      width: 24px; /* Adjust icon size */
-      vertical-align: middle; /* Align icons vertically with text */
-      margin-right: 10px; /* Space between icon and text */
-    }
-  </style>
 /* Animations */
 @keyframes fadeIn {
   from {
