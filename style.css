@@ -132,7 +132,24 @@ footer a {
 footer a:hover {
   background-color: #f44336; /* Darker coral color on hover */
 }
+ <style>
+    .contact-info {
+      text-align: center; /* Center align the contact info */
+      margin-top: 20px; /* Space between content and footer */
+    }
 
+    .contact-info p {
+      font-size: 1.2em; /* Font size for contact information */
+      color: #555; /* Text color */
+      margin: 10px 0; /* Vertical spacing */
+    }
+
+    .contact-icon {
+      width: 24px; /* Adjust icon size */
+      vertical-align: middle; /* Align icons vertically with text */
+      margin-right: 10px; /* Space between icon and text */
+    }
+  </style>
 /* Animations */
 @keyframes fadeIn {
   from {
