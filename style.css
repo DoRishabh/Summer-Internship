@@ -28,6 +28,18 @@ header h1 {
 header #details {
   margin-top: 10px;
   font-size: 1.2em;
+  background-color: #f0f0f0; /* Light gray background color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside the details section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+  text-align: left;
+}
+
+header #details span {
+  display: block; /* Display each detail on a new line */
+  margin-bottom: 10px; /* Space between details */
+  font-weight: bold; /* Bold text for emphasis */
+  color: #333; /* Dark text color */
 }
 
 h2 {
@@ -93,15 +105,27 @@ footer {
 
 footer .contact-info {
   margin-bottom: 10px;
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+footer .contact-info p {
+  font-size: 1.2em;
+  color: #555;
+  margin: 10px 0;
 }
 
 footer a {
   color: #1e90ff;
   text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #ff6347; /* Coral background color */
+  transition: background-color 0.3s ease;
 }
 
 footer a:hover {
-  text-decoration: underline;
+  background-color: #f44336; /* Darker coral color on hover */
 }
 
 /* Animations */
