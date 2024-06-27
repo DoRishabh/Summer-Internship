@@ -82,17 +82,12 @@ section {
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  width: calc(33.333% - 40px); 
-  margin-bottom: 2rem; 
-  box-sizing: border-box; 
-  transition: transform 0.2s, box-shadow 0.3s; 
+  width: calc(33.333% - 40px);
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  transition: transform 0.2s, box-shadow 0.3s;
   overflow: hidden;
   opacity: 0; /* Start with opacity 0 for fade-in effect */
-}
-
-.taskBox:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .taskBox.animate {
@@ -110,6 +105,10 @@ section {
   }
 }
 
+.taskBox:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); 
+}
 .tr-102 {
   position: absolute;
   bottom: 1rem; 
@@ -124,7 +123,6 @@ section {
   border-radius: 5px;
   animation: fadeInText 0.5s ease-in-out;
 }
-
 @keyframes fadeInText {
   from {
     opacity: 0;
@@ -154,7 +152,6 @@ section {
     margin-right: 0; 
   }
 }
-
 footer {
   background-color: #333; /* Dark background for the footer */
   color: #fff; /* White text for contrast */
