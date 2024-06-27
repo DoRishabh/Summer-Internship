@@ -1,3 +1,5 @@
+/* style.css */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -118,17 +120,17 @@ footer .contact-info p {
 }
 
 footer a {
-  color: #555; /* Match text color of email */
+  color: #555; /* Text color */
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
   border-radius: 4px;
-  background-color: #f0f0f0; /* Match background color of email section */
+  background-color: #f0f0f0; /* Light gray background color */
   transition: background-color 0.3s ease;
 }
 
 footer a:hover {
-  background-color: #ddd; /* Darker on hover for effect */
+  background-color: #ddd; /* Darker background color on hover */
 }
 
 .contact-icon {
