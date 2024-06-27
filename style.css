@@ -129,6 +129,10 @@ footer a {
   transition: background-color 0.3s ease;
 }
 
+footer a.linkedin {
+  color: #0077b5; /* LinkedIn blue color */
+}
+
 footer a:hover {
   background-color: #ddd; /* Darker background color on hover */
 }
@@ -167,3 +171,4 @@ footer a:hover {
     margin: 10px 0; /* Adjust margin for spacing */
   }
 }
+
