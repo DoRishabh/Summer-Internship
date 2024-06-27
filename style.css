@@ -15,9 +15,14 @@ header {
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 3em; /* Increase font size for emphasis */
   margin: 0;
   animation: fadeIn 2s ease-in-out;
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add spacing between letters */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for 3D effect */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Good font */
+  color: #ff6347; /* Coral color for the heading */
 }
 
 header #details {
