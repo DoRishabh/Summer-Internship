@@ -71,32 +71,33 @@ section {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: calc(33.333% - 1rem);
-  transition: transform 0.2s;
+  width: calc(33.333% - 20px); /* Adjusted width for three boxes in a row */
+  margin-right: 20px; /* Adjust spacing between boxes */
+  margin-bottom: 20px; /* Optional: Adds space below each box */
+  box-sizing: border-box; /* Ensure padding and border are included in width calculation */
+  float: left; /* Float elements to achieve inline display */
 }
 
-.taskBox:hover {
-  transform: scale(1.05);
+.taskBox:nth-child(3n + 3) {
+  margin-right: 0; /* Remove margin from every third element to prevent wrapping issues */
 }
 
-.taskBox h3 {
-  margin-bottom: 0.5rem;
-  color: #1e90ff;
-}
-
-hr {
-  margin: 0.5rem 0;
-  border: 1px solid #ddd;
+@media (max-width: 992px) {
+  .taskBox {
+    width: calc(50% - 20px); /* Two boxes in a row on medium screens */
+  }
 }
 
 @media (max-width: 768px) {
   .taskBox {
-    width: calc(50% - 1rem);
+    width: calc(50% - 20px); /* Two boxes in a row on smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .taskBox {
-    width: 100%;
+    width: 100%; /* One box per row on mobile screens */
+    margin-right: 0; /* Ensure no right margin on mobile */
   }
 }
+
