@@ -8,7 +8,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #004242, #ff6347);
+  background: linear-gradient(135deg, #004040, #ff6347);
   color: #fff;
   padding: 3rem;
   border-radius: 15px;
