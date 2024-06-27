@@ -47,7 +47,7 @@ h2 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft box shadow */
   margin: 20px;
   padding: 20px;
-  width: calc(30% - 40px);
+  width: calc(50% - 40px); /* Adjust width for smaller screens */
   box-sizing: border-box;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: left;
@@ -117,5 +117,13 @@ footer a:hover {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .taskBox {
+    width: 100%; /* Full width on smaller screens */
+    margin: 10px 0; /* Adjust margin for spacing */
   }
 }
