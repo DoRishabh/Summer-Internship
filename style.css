@@ -19,7 +19,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #2f4f4f, #ff6347);
+  background: linear-gradient(135deg, #ff0000, #ff6347);
   color: #fff;
   padding: 3rem;
   border-radius: 15px;
