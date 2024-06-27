@@ -121,7 +121,7 @@ section {
 
 @media (max-width: 480px) {
   .taskBox {
-    width: calc(100% - 40px); /* One box per row on mobile screens */
-    margin-right: 0; /* Ensure no right margin on mobile */
+    width: calc(50% - 20px); 
+    margin-right: 0; 
   }
 }
