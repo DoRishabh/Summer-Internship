@@ -82,11 +82,27 @@ section {
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  width: calc(33.333% - 40px); 
-  margin-bottom: 2rem; 
-  box-sizing: border-box; 
-  transition: transform 0.2s, box-shadow 0.3s; 
+  width: calc(33.333% - 40px);
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  transition: transform 0.2s, box-shadow 0.3s;
   overflow: hidden;
+  opacity: 0; /* Start with opacity 0 for fade-in effect */
+}
+
+.taskBox.animate {
+  animation: slideInBoxes 0.5s ease forwards;
+}
+
+@keyframes slideInBoxes {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .taskBox:hover {
