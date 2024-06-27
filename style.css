@@ -105,13 +105,18 @@ footer {
 
 footer .contact-info {
   margin-bottom: 10px;
-  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
 }
 
 footer .contact-info p {
   font-size: 1.2em;
   color: #555;
   margin: 10px 0;
+}
+
+.contact-icon {
+  width: 24px; /* Adjust icon size */
+  vertical-align: middle; /* Align icons vertically with text */
+  margin-right: 10px; /* Space between icon and text */
 }
 
 footer a {
