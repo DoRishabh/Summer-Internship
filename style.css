@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
   font-family: Arial, sans-serif;
   margin: 2rem;
@@ -68,36 +70,35 @@ section {
 
 .taskBox {
   background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: calc(33.333% - 20px); /* Adjusted width for three boxes in a row */
-  margin-right: 20px; /* Adjust spacing between boxes */
-  margin-bottom: 20px; /* Optional: Adds space below each box */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 40px); /* Adjusted width for three boxes in a row */
+  margin-bottom: 2rem; /* Adds space below each box */
   box-sizing: border-box; /* Ensure padding and border are included in width calculation */
-  float: left; /* Float elements to achieve inline display */
+  transition: transform 0.2s, box-shadow 0.3s; /* Smooth transition for hover effects */
 }
 
-.taskBox:nth-child(3n + 3) {
-  margin-right: 0; /* Remove margin from every third element to prevent wrapping issues */
+.taskBox:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .taskBox {
-    width: calc(50% - 20px); /* Two boxes in a row on medium screens */
+    width: calc(50% - 40px); /* Two boxes in a row on medium screens */
   }
 }
 
 @media (max-width: 768px) {
   .taskBox {
-    width: calc(50% - 20px); /* Two boxes in a row on smaller screens */
+    width: calc(50% - 40px); /* Two boxes in a row on smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .taskBox {
-    width: 100%; /* One box per row on mobile screens */
+    width: calc(100% - 40px); /* One box per row on mobile screens */
     margin-right: 0; /* Ensure no right margin on mobile */
   }
 }
-
