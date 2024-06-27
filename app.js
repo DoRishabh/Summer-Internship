@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Initialize AOS (Animate On Scroll)
+  
   AOS.init({
-    duration: 1000, // Animation duration in milliseconds
-    once: true // Whether animation should happen only once
+    duration: 1000, 
+    once: true 
   });
 
-  // Smooth scrolling for internal links
+  
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Task box hover effect to animate text
+  
   document.querySelectorAll('.taskBox').forEach(taskBox => {
     taskBox.addEventListener('mouseenter', function () {
       const text = this.querySelector('.tr-102');
