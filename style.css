@@ -125,7 +125,6 @@ footer a {
   display: inline-block;
   padding: 8px 16px;
   border-radius: 4px;
-  background-color: #f0f0f0; /* Light gray background color */
   transition: background-color 0.3s ease;
 }
 
@@ -171,4 +170,3 @@ footer a:hover {
     margin: 10px 0; /* Adjust margin for spacing */
   }
 }
-
