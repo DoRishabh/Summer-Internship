@@ -116,12 +116,16 @@ footer .contact-info h1 {
   font-size: 1.5em;
   margin-bottom: 15px;
   animation: textAnimation 1.5s infinite;
+  color: #ff6347; /* Coral color to match header */
 }
 
 footer .contact-info p {
   font-size: 1.2em;
-  color: #555;
+  color: #555; /* Dark text color for better readability */
   margin: 10px 0;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
 }
 
 .contact-icon {
@@ -131,16 +135,12 @@ footer .contact-info p {
 }
 
 footer a {
-  color: #555; /* Text color */
+  color: #0077b5; /* LinkedIn blue color */
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
-}
-
-footer a.linkedin {
-  color: #0077b5; /* LinkedIn blue color */
 }
 
 footer a:hover {
