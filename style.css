@@ -3,6 +3,7 @@ body {
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
+  transform: translateZ(0); /* Apply hardware acceleration to the whole body */
 }
 
 header {
@@ -21,6 +22,7 @@ header h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #ff6347;
+  transform: translateZ(0); /* Apply hardware acceleration to the header h1 */
 }
 
 header #details {
@@ -45,6 +47,7 @@ h2 {
   color: red;
   margin: 20px 0;
   animation: slideIn 2s ease-in-out, textGlow 1.5s ease-in-out infinite alternate;
+  transform: translateZ(0); /* Apply hardware acceleration to h2 */
 }
 
 #main {
@@ -66,6 +69,7 @@ h2 {
   box-sizing: border-box;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: left;
+  transform: translateZ(0); /* Apply hardware acceleration to .taskBox */
 }
 
 .taskBox h3 {
