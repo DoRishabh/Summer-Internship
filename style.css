@@ -128,6 +128,7 @@ footer .contact-info p {
   width: 24px; /* Adjust icon size */
   vertical-align: middle; /* Align icons vertically with text */
   margin-right: 10px; /* Space between icon and text */
+  animation: textAnimation 1.5s infinite;
 }
 
 footer a {
