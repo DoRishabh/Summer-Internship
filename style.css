@@ -42,12 +42,6 @@ header #details span {
   color: #333; /* Dark text color */
 }
 
-header #details span.internship {
-  font-size: 1.5em; /* Increase font size for emphasis */
-  animation: fadeIn 2s ease-in-out, textGlow 1.5s ease-in-out infinite alternate;
-  color: #ff6347; /* Coral color for the internship text */
-}
-
 h2 {
   text-align: center;
   color: #444;
