@@ -99,7 +99,7 @@ h2 {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: azure; /* Change background color to azure */
+  background-color:#f0f8ff;/* Change background color to azure */
   color: white;
 }
 
@@ -133,7 +133,7 @@ footer a.linkedin {
 }
 
 footer a:hover {
-  background-color: #ADD8E6;
+  background-color: azure;
 }
 
 .contact-icon {
