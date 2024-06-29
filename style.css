@@ -42,7 +42,7 @@ header #details span {
 
 h2 {
   text-align: center;
-  color: #444;
+  color: red;
   margin: 20px 0;
   animation: slideIn 2s ease-in-out, textGlow 1.5s ease-in-out infinite alternate;
 }
